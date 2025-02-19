@@ -1,0 +1,11 @@
+next-version: 0.1.0
+mode: ContinuousDelivery
+increment: Inherit
+tag-prefix: '[vV]'
+major-version-bump-message: '\+semver:\s?(major)'
+minor-version-bump-message: '\+semver:\s?(minor)'
+patch-version-bump-message: '\+semver:\s?(patch)'
+commit-message-incrementing: Enabled
+update-build-number: true
+ignore:
+  sha: []

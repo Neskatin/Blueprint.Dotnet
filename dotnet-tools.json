@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "nuget-license": {
+      "version": "3.0.9",
+      "commands": [
+        "nuget-license"
+      ],
+      "rollForward": false
+    },
+    "dotnet-consolidate": {
+      "version": "4.2.0",
+      "commands": [
+        "dotnet-consolidate"
+      ],
+      "rollForward": false
+    },
+    "gitversion.tool": {
+      "version": "5.12.0",
+      "commands": [
+        "dotnet-gitversion"
+      ],
+      "rollForward": false
+    }
+  }
+}

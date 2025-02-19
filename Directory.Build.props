@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>CS0618</WarningsNotAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SonarQubeSetting Include="sonar.exclusions">
+      <Value>**/Migrations/*</Value>
+    </SonarQubeSetting>
+  </ItemGroup>
+
+  <ItemGroup Condition="!$(ProjectName.EndsWith(`Test`))">
+    <InternalsVisibleTo Include="$(AssemblyName).Test"/>
+    <InternalsVisibleTo Include="$(AssemblyName).IntegrationTest"/>
+    <InternalsVisibleTo Include="DynamicProxyGenAssembly2"/>
+  </ItemGroup>
+
+</Project>
+
